@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="checkout-success">
+            <div class="checkout-success-block">
+                <div class="checkout-success-icon">
+                    <svg width="125" height="125" viewBox="0 0 125 125"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M88.2304 65.2408L86.0837 28.4951H68.7556V44.9954H61.4317V28.4951H33.2239V44.9954H25.9V28.4951H8.57168L4.72296 94.3792C4.42342 99.5091 6.2002 104.393 9.72617 108.131C13.2521 111.869 18.0239 113.927 23.1624 113.927H63.7883C61.4178 109.312 60.079 104.083 60.079 98.547C60.079 81.8388 72.2743 67.9275 88.2304 65.2408Z"
+                            fill="black" />
+                        <path
+                            d="M33.2243 21.4275C33.2243 13.6508 39.5512 7.3239 47.3279 7.3239C55.1047 7.3239 61.4318 13.6508 61.4318 21.4275V28.4949H68.7557V21.4275C68.7557 9.61238 59.1433 0 47.3279 0C35.5125 0 25.9004 9.61238 25.9004 21.4275V28.4949H33.2243V21.4275Z"
+                            fill="black" />
+                        <path
+                            d="M120.31 98.547C120.31 83.9607 108.443 72.0938 93.8565 72.0938C79.2702 72.0938 67.4033 83.9607 67.4033 98.547C67.4033 113.133 79.2702 125 93.8565 125C108.443 125 120.31 113.133 120.31 98.547ZM89.896 111.503L78.0008 98.0492L83.4876 93.1981L90.1323 100.713L103.893 86.4591L109.162 91.5458L89.896 111.503Z"
+                            fill="#0CC89B" />
+                    </svg>
+
+                </div>
+                <div class="checkout-success-heading">
+                    <h1><?= $block->escapeHtml(__('Successful purchase')) ?></h1>
+                    <?php if ($block->getOrderId()) :?>
+
+                    <?php if ($block->getCanViewOrder()) :?>
+                    <p><?= $block->escapeHtml(__('Your order: %1', sprintf('<a
+                            href="%s" class="order-number"><strong>%s</strong></a>',
+                        $block->escapeUrl($block->getViewOrderUrl()),
+                        $block->getOrderId())), ['a', 'strong']) ?></p>
+                    <?php else :?>
+                    <p><?= $block->escapeHtml(__('Your order: <b>%1</b>',
+                        $block->getOrderId()), ['b']) ?></p>
+                    <?php endif;?>
+
+                    <?php endif;?>
+                </div>
+            </div>
+            <div class="checkout-success-content">
+                <div class="checkout-success-content-thanks">
+                    <h2><?= $block->escapeHtml(__('Thank you for shopping at Routine.vn website'))
+                        ?></h2>
+                </div>
+                <div class="checkout-success-table">
+                    <div class="checkout-success-row-1">
+                        <div class="checkout-success-list-product">
+                            <div class="checkout-success-products">
+                                <ol class="mini-items">
+                                    <li class="product-items">
+                                        <div class="products">
+                                            <span
+                                                class="product-image-container">
+                                                <span
+                                                    class="product-image-wrapper">
+                                                    <a href="#"><img
+                                                            src="https://routine.vn/media/catalog/product/cache/9eb3bb38848a3053921b46e4936c5b10/a/o/ao-nam-10f23swe001_black_1__3_1.jpg"
+                                                            alt></a>
+                                                </span>
+                                            </span>
+                                            <div class="product-item-inner">
+                                                <div
+                                                    class="product-item-name-block">
+                                                    <a href="#">
+                                                        <strong
+                                                            class="product-item-name">Áo
+                                                            Sweater Nam Basic
+                                                            Cổ Tròn
+                                                            Nhãn Trang Trí Form
+                                                            Regular -
+                                                            10F23SWE001</strong>
+                                                    </a>
+                                                    <div class="product options">
+                                                        <dl class="item-option">
+                                                            <dt class="label">MÀU</dt>
+                                                            <dd class="values">black</dd>
+                                                        </dl>
+                                                        <dl class="item-option">
+                                                            <dt class="label">SIZE</dt>
+                                                            <dd class="values">L</dd>
+                                                        </dl>
+                                                        <dl class="item-option">
+                                                            <dt class="label">SL</dt>
+                                                            <dd class="values">1</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <span
+                                                        class="price-excluding-tax">
+                                                        <span class="cart-price">
+                                                            <span class="price">422.000
+                                                                ₫</span>
+                                                        </span>
+                                                        <span class="old-price">
+                                                            <span class="price">
+                                                                429.000 ₫</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-items">
+                                        <div class="products">
+                                            <span
+                                                class="product-image-container">
+                                                <span
+                                                    class="product-image-wrapper">
+                                                    <a href="#"><img
+                                                            src="https://routine.vn/media/catalog/product/cache/9eb3bb38848a3053921b46e4936c5b10/a/o/ao-nam-10f23swe001_black_1__3_1.jpg"
+                                                            alt></a>
+                                                </span>
+                                            </span>
+                                            <div class="product-item-inner">
+                                                <div
+                                                    class="product-item-name-block">
+                                                    <a href="#">
+                                                        <strong
+                                                            class="product-item-name">Áo
+                                                            Sweater Nam Basic
+                                                            Cổ Tròn
+                                                            Nhãn Trang Trí Form
+                                                            Regular -
+                                                            10F23SWE001</strong>
+                                                    </a>
+                                                    <div class="product options">
+                                                        <dl class="item-option">
+                                                            <dt class="label">MÀU</dt>
+                                                            <dd class="values">black</dd>
+                                                        </dl>
+                                                        <dl class="item-option">
+                                                            <dt class="label">SIZE</dt>
+                                                            <dd class="values">L</dd>
+                                                        </dl>
+                                                        <dl class="item-option">
+                                                            <dt class="label">SL</dt>
+                                                            <dd class="values">1</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <span
+                                                        class="price-excluding-tax">
+                                                        <span class="cart-price">
+                                                            <span class="price">422.000
+                                                                ₫</span>
+                                                        </span>
+                                                        <span class="old-price">
+                                                            <span class="price">
+                                                                429.000 ₫</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout-success-row-2">
+                        <div class="checkout-success-cart-total">
+                            <div class="cart-total">
+                                <table class="table-total">
+                                    <tbody>
+                                        <tr>
+                                            <th>Số lượng </th>
+                                            <td>5 </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tiền hàng</th>
+                                            <td>1.979.000đ</td>
+                                        </tr>
+                                        <tr>
+                                            <th> Giảm VIP [GOLD - 10%]</th>
+                                            <td> 197.900đ</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Giảm giá (Voucher/Gift
+                                                Card)</th>
+                                            <td> 100.000đ</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Giảm giá (Coupon)</th>
+                                            <td>50.000đ</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Khuyến mãi (Mua 3 giảm
+                                                70K)</th>
+                                            <td> 70.000đ</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Phí vận chuyển</th>
+                                            <td>30.000đ</td>
+                                        </tr>
+                                        <tr class="grand-total">
+                                            <th class="mark">
+                                                <strong>Tổng cộng</strong></th>
+                                            <td>1.034.552 đ</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="checkout-success-infor-customer">
+                            <div class="checkout-success-cart info-address">
+                                <strong>Thông tin giao hàng</strong>
+                                <div class="checkout-success-information">
+                                    <p>Lê Đại Dương</p>
+                                    <p>Sonatus Building, 15 Lê Thánh Tôn ,
+                                        Phường
+                                        Bến Nghé , Quận 1 , TP Hồ Chí Minh
+                                    </p>
+                                    <p>0984966226</p>
+                                </div>
+                            </div>
+                            <div class="checkout-success-cart info-delivery">
+                                <strong>Phuong thức vận chuyển </strong>
+                                <div class="checkout-success-information">
+                                    <p>Giao hàng tiêu chuẩn (2-5 ngày)</p>
+                                </div>
+                            </div>
+                            <div class="checkout-success-cart info-order">
+                                <strong>Phuong thức thanh toán </strong>
+                                <div class="checkout-success-information">
+                                    <p>Thanh toán khi nhận hàng (COD)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actions-toolbar-trigger">
+                            <button type="button"
+                                class="button action primary btn-reorder">
+                                <span class="button-text">Đặt lại</span>
+                            </button>
+                            <button type="button"
+                                class="button action primary btn-follow-order">
+                                <span class="button-text">Theo dõi đơn hàng</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

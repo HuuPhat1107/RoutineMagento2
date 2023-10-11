@@ -1,0 +1,367 @@
+.main-hp {
+    background-color: #f6f3ea;
+}
+
+/* 
+.banner .banner-image-mobile {
+    display: none;
+} */
+
+.menutop {
+    display: flex;
+    justify-content: center;
+}
+
+.menutop li {
+    position: relative;
+}
+
+.menutop li:after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    left: 6px;
+    bottom: 11px;
+    border-bottom: solid 3px #000;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    width: calc(100% - 10px);
+}
+
+.menutop li:hover:after {
+    transform: scaleX(1);
+}
+
+.menutop li h2 {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.menutop li a {
+    margin: 5px 10px;
+    font-family: "Roboto Condensed";
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.block-1 .story,
+.block-1 .col-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    padding: 4% 7%;
+    background-color: #25499c;
+}
+.block-1 .col-images img{
+    width: 50%;
+}
+
+.block-1 .story .story-img,
+.block-1 .story .story-content {
+    width: 49%;
+}
+
+.block-1 .story .story-content {
+    background: url(https://res.cloudinary.com/dj5vdnbai/image/upload/v1696996675/Untitled-6_uafswi.png) no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.block-3 .story .story-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.block-1 .story .story-content .story-title,
+.block-3 .story .story-content .story-title {
+    margin: 5% 0;
+}
+
+.block-1 .story .story-content .story-title h2,
+.block-3 .story .story-content .story-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: justify;
+}
+
+.block-1 .story .story-content .story-description p,
+.block-3 .story .story-content p,
+.item-image-content p {
+    font-size: 20px;
+    text-align: justify;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.block-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.block-images .images-item {
+    width: 50%;
+}
+
+.block-2,
+.block-4,
+.block-5 {
+    margin: 4% auto;
+    width: 1400px;
+    max-width: 100%;
+}
+
+.block-2 .grid-layout {
+    display: grid;
+    grid-template-columns: 23vw 26vw 23vw;
+    grid-template-rows: 31vw 31vw 39vw;
+    gap: 10px;
+    grid-template-areas:
+        "h1 h1 h2"
+        "h1 h1 h3"
+        "h4 h5 h5";
+}
+
+.grid-layout .item-img img,
+.block-4 .material-item .material-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-layout .item-img:first-child {
+    grid-area: h1;
+}
+
+.grid-layout .item-img:nth-child(2) {
+    grid-area: h2;
+}
+
+.grid-layout .item-img:nth-child(3) {
+    grid-area: h3;
+}
+
+.grid-layout .item-img:nth-child(4) {
+    grid-area: h4;
+}
+
+.grid-layout .item-img:last-child {
+    grid-area: h5;
+}
+
+.block-3 {
+    background-color: #25499c;
+    padding: 4% 7%;
+}
+
+.block-3 .story {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3%;
+    padding: 3% 0;
+}
+
+.block-3 .story .story-img,
+.block-3 .story .story-content {
+    width: 48%;
+}
+
+.block-3 .story .story-img {
+    position: relative;
+}
+
+.story-image {
+    width: 100%;
+    height: auto;
+}
+
+.positioned-image {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s;
+}
+
+.block-3 .story .story-img .story-img-label {
+    position: absolute;
+    bottom: -5%;
+    left: -10%;
+}
+
+.block-3 .story .story-img .story-img-label img {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s;
+}
+
+.block-3 .images-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-3 .images-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    padding: 3% 0;
+    align-items: flex-start;
+}
+
+.block-3 .images-list .item-image {
+    width: 48%;
+    position: relative;
+}
+
+.block-3 .images-list .item-image img {
+    width: 100%;
+    height: auto;
+}
+
+.item-image-content {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+
+.item-image-content p {
+    width: 70%;
+    text-align: justify;
+}
+.material,
+.material .material-title,
+.form,
+.form .col-title,
+.color,
+.highlight,
+.highlight .highlight-title  {
+    padding: 2% 0;
+}
+
+.material .material-title h2,
+.form .col-title h2,
+.color .color-title h2,
+.highlight .highlight-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #25499C;
+}
+
+.block-4 .material-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 29vw 78vw;
+    gap: 10px;
+    grid-template-areas:
+        "h1 h2 h3 h4"
+        "h5 h5 h5 h5";
+}
+
+.material-item .material-img:first-child {
+    grid-area: h1;
+}
+
+.material-item .material-img:nth-child(2) {
+    grid-area: h2;
+}
+
+.material-item .material-img:nth-child(3) {
+    grid-area: h3;
+}
+
+.material-item .material-img:nth-child(4) {
+    grid-area: h4;
+}
+
+.material-item .material-img:last-child {
+    grid-area: h5;
+}
+
+.form .col-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
+}
+
+.form .col-content .col-item {
+    width: 33%;
+    padding: 1%;
+}
+
+.form .col-content .col-item .item-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.form .col-content .col-item .item-text p,
+.form .col-content .col-item .item-text h3 {
+    text-align: center;
+}
+
+.form .col-content .col-item .item-text h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.form .col-content .col-item .item-text p {
+    font-size: 18px;
+    padding: 0 22%;
+}
+.color .color-content div{
+    padding: 2% 0;
+}
+.color .color-content .color-young,
+.color .color-content .color-essential {
+    display: flex;
+    gap: 10px;
+}
+.highlight .highlight-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.highlight .highlight-list .highlight-item {
+    width: 32%;
+}
+.block-5 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.block-5 .col-item {
+    width: 49%;
+    padding: 2% 0;
+}
+
+@media screen and (max-width:768px) {
+    .menutop li {
+        margin: 0;
+    }
+
+    .menutop li a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    /* 
+    .banner .banner-image-pc {
+        display: none;
+    }
+
+    .banner .banner-image-mobile {
+        display: block;
+    } */
+}

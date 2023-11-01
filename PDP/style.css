@@ -1,0 +1,43 @@
+body {
+    background-color: #fff
+}
+
+.page-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+.page-header {
+    border: none;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 600;
+    background-color: #fff;
+}
+
+.page-header .panel.wrapper,
+.page-header .header-menu-sticky {
+    display: none
+}
+
+@media screen and (min-width: 1024px) {
+    .page-header {
+        position: sticky;
+        top: 0;
+        z-index: 600;
+        background-color: #fff;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .page-header {
+        border: 0;
+        margin-bottom: 0;
+    }
+}

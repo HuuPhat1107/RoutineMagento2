@@ -1,3 +1,7 @@
+.page-header .header-menu-sticky li:nth-child(5) a {
+    color: red !important;
+}
+
 @media only screen and (max-width: 767px) {
     .product-page-top-media {
         margin: 0 -20px 20px !important;
@@ -8,7 +12,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width:768px) {
     .product-info-main .price-box {
         margin: 20px 0 !important;
     }
@@ -80,6 +84,7 @@
         max-width: 25%;
         width: auto;
     }
+
 }
 
 .rt_home_slider .swiper-wrapper {

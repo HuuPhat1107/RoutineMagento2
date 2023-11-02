@@ -83,7 +83,9 @@
 .product-content .product_description {
     margin: 0 auto 50px;
 }
-
+.mgn-product-label[class*=bot-] {
+    
+}
 @media only screen and (max-width: 767px) {
     .catalog-product-view .product.media .mgn-product-label[class*=bot-] {
         position: absolute; 

@@ -235,14 +235,13 @@ ol {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-    margin: 3%;
 }
 
 .action.primary {
     background-color: #fff;
     color: #000;
     border: 1px solid #000;
-    padding: 10px 15px;
+    padding: 10px 5px;
     cursor: pointer;
     border-radius: 5px;
     outline: none;
@@ -254,7 +253,7 @@ ol {
 }
 
 .action.primary .button-text {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -296,9 +295,6 @@ ol {
 
     .product-items .product-item-inner {
         padding: 10px 0 0 6px;
-    }
-    .actions-toolbar-trigger {
-        margin: 0;
     }
     .action.primary .button-text {
         font-size: 14px;

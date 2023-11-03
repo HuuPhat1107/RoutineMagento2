@@ -297,4 +297,10 @@ ol {
     .product-items .product-item-inner {
         padding: 10px 0 0 6px;
     }
+    .actions-toolbar-trigger {
+        margin: 0;
+    }
+    .action.primary .button-text {
+        font-size: 14px;
+    }
 }

@@ -246,12 +246,11 @@ ol {
     cursor: pointer;
     border-radius: 5px;
     outline: none;
+    text-transform: uppercase;
 }
-.btn-reorder {
-    width: 40%;
-}
+.btn-reorder,
 .btn-follow-order {
-    width: 60%;
+    width: 50%;
 }
 
 .action.primary .button-text {

@@ -68,7 +68,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    /* text-fill-color: transparent; */
 
 }
 
@@ -91,12 +91,14 @@
         margin: 0;
         width: 100% !important;
     }
+    /* có gallary thì chỉnh sửa như này */
+/*     
     .catalog-product-view .product.media .mgn-product-label[class*=bot-] {
         position: absolute !important;
     }
     .mgn-product-label[class*=bot-] {
         bottom: 139px;
-    }
+    } */
 }
 
 @media only screen and (min-width:768px) {

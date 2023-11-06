@@ -26,6 +26,153 @@
         <link rel="stylesheet" type="text/css" media="all"
             href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
+
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
+            rel="stylesheet">
+        <style>
+                .page-header .header-menu-sticky li:nth-child(5) a {
+                    color: red !important;
+                }
+
+                @media only screen and (max-width: 767px) {
+                    .product-page-top-media {
+                        margin: 0 -20px 20px !important;
+                    }
+
+                    .product-info-main .page-title-wrapper .page-title {
+                        margin-bottom: 20px !important;
+                    }
+                }
+
+                @media only screen and (min-width:768px) {
+                    .product-info-main .price-box {
+                        margin: 20px 0 !important;
+                    }
+                }
+
+                .page-products .toolbar-products {
+                    top: 0 !important;
+                }
+
+                .post-content .post-description img {
+                    margin-bottom: 0 !important;
+                }
+
+                .ampromo-free-gift .ampromo-carousel-product .ampromo-item-photo {
+                    aspect-ratio: 2/3 !important;
+                }
+
+                .checkout-index-index .checkout-shipping-address .opc-block-summary.amcheckout-summary-container {
+                    display: none;
+                }
+
+                .store-items .store-image .wrapper-image .image {
+                    aspect-ratio: 3/2 !important;
+                    padding-top: 0px !important;
+                }
+
+                .page-cart-note {
+                    display: none
+                }
+
+                .checkout-index-index .field[name="shippingAddress.city"] {
+                    display: none;
+                }
+
+                .checkout-index-index .opc-wrapper.am-opc-wrapper .payment-option-content {
+                    padding: 0 !important;
+                }
+
+                .cms-index-index .page-header:not(.sticky) .header.content {
+                    background: none !important;
+                }
+
+                @media (min-width: 1024px) {
+                    .page-header .header-menu-sticky li {
+                        margin: 0 40px 0 0 !important;
+                    }
+                }
+
+                .page-wrapper .navigation.nav-magemenu-menu .nav-exploded.explodedmenu>li>a {
+                    padding: 0 18px !important;
+                }
+
+                .catalog-category-view img.am-banners-lite-label,
+                .catalogsearch-result-index img.am-banners-lite-label {
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    width: auto;
+                    max-width: 70px;
+                }
+
+                @media screen and (max-width : 991.98px) {
+
+                    .catalog-category-view img.am-banners-lite-label,
+                    .catalogsearch-result-index img.am-banners-lite-label {
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                        max-width: 25%;
+                        width: auto;
+                    }
+
+                }
+
+                .rt_home_slider .swiper-wrapper {
+                    height: 100vh;
+                }
+
+                .slick-vertical .slick-slide {
+                    height: 100vh;
+                }
+
+                @media only screen and (min-width: 376px) and (max-width: 991px) {
+                    .catalog-product-view .product-detail-infomation-sticky-parent .product-gallery-popup {
+                        height: calc(100% - 50px);
+                    }
+                }
+
+                .catalog-product-view .product-detail-infomation-sticky-parent .product-gallery-popup {
+                    background-color: rgba(177, 177, 177, 0.48);
+                }
+
+                @media only screen and (max-width: 991px) {
+                    .catalog-product-view .product-detail-infomation-sticky-parent .vertical-gallery .swiper-container.swatch-item .product-item-image>a img {
+                        object-fit: contain;
+                    }
+                }
+
+                .product.item-image.imgzoom {
+                    position: relative;
+                }
+
+                .product.media .gallery-horizontal .item-image .popup-youtube,
+                .product.media .gallery-vertical .item-image .popup-youtube {
+                    display: block !important;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    background: #00000000;
+                    z-index: 2;
+                    left: 0;
+                    right: 0;
+                    font-size: 0;
+                    border: 0;
+                    color: transparent;
+                }
+
+                @media screen and (max-width: 768px) {
+                    .checkout-index-index .checkout-shipping-address .opc-block-summary.amcheckout-summary-container {
+                        display: block !important;
+                    }
+
+                    .checkout-index-index .checkout-column .opc-block-summary.amcheckout-summary-container {
+                        display: none;
+                    }
+                }
+            </style>
     </head>
 
     <body data-container="body"
@@ -1356,7 +1503,8 @@
                 <div class="columns">
                     <div class="column main">
                         <div class="product-page-top">
-                            <div class="product-page-top-media"><div
+                            <div
+                                class="product-page-top-media"><div
                                     class="product media"> <a
                                         id="gallery-prev-area" tabindex="-1"></a><div
                                         class="action-skip-wrapper"> <a
@@ -1364,269 +1512,11 @@
                                             href="#gallery-next-area"><span>
                                                 Chuyển đến phần đầu của thư viện
                                                 hình ảnh</span></a></div> <div
-                                        class="gallery-placeholder"
-                                        data-gallery-role="gallery-placeholder"
-                                        style>
-                                        <div class="fotorama--hidden"></div><div
-                                            class="fotorama-item fotorama fotorama1698977700495"
-                                            data-gallery-role="gallery">
-                                            <div
-                                                data-gallery-role="fotorama__focusable-start"
-                                                tabindex="-1"></div>
-                                            <div
-                                                class="fotorama__wrap fotorama__wrap--css3 fotorama__wrap--slide fotorama__wrap--toggle-arrows fotorama__wrap--no-controls"
-                                                style="min-width: 0px; max-width: 100%;">
-                                                <div class="fotorama__stage"
-                                                    data-fotorama-stage="fotorama__stage"
-                                                    style="height: 1127px; left: 82px; width: 751px;"><div
-                                                        class="fotorama__fullscreen-icon"
-                                                        data-gallery-role="fotorama__fullscreen-icon"
-                                                        tabindex="0"
-                                                        aria-label="Exit fullscreen"
-                                                        role="button"
-                                                        style="display: none; right: 82px;"></div>
-                                                    <div
-                                                        class="fotorama__arr fotorama__arr--prev"
-                                                        tabindex="0"
-                                                        role="button"
-                                                        aria-label="Previous"
-                                                        data-gallery-role="arrow"
-                                                        style="display: block;">
-                                                        <div
-                                                            class="fotorama__arr__arr"></div>
-                                                    </div>
-                                                    <div
-                                                        class="fotorama__stage__shaft fotorama__grab"
-                                                        tabindex="0"
-                                                        data-gallery-role="stage-shaft"
-                                                        style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px); margin-left: 0px; max-width: 669px; width: 751px;">
-                                                        <div
-                                                            class="fotorama__stage__frame fotorama_vertical_ratio fotorama__loaded fotorama__loaded--img magnify-wheel-loaded fotorama__fade-rear fotorama__loaded--full fotorama__active"
-                                                            aria-hidden="false"
-                                                            style="left: 0px; transition-duration: 0ms; opacity: 1;"
-                                                            href="https://routine.vn/media/amasty/webp/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/q/u/quan-jean-nam-10f20dpa102cr2-black-_3__1_1_jpg.webp"
-                                                            data-active="true"><img
-                                                                src="https://routine.vn/media/amasty/webp/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/q/u/quan-jean-nam-10f20dpa102cr2-black-_3__1_1_jpg.webp"
-                                                                class="fotorama__img--full"
-                                                                aria-hidden="true"
-                                                                style><img
-                                                                src="https://routine.vn/media/amasty/webp/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/q/u/quan-jean-nam-10f20dpa102cr2-black-_3__1_1_jpg.webp"
-                                                                class="fotorama__img"
-                                                                aria-hidden="false"
-                                                                id="magnifier-item-0"></div><div
-                                                            class="fotorama__stage__frame magnify-wheel-loaded fotorama_vertical_ratio fotorama__loaded fotorama__loaded--img fotorama__loaded--full"
-                                                            aria-hidden="true"
-                                                            style="left: -753px; transition-duration: 0ms;"
-                                                            data-active="false"
-                                                            href="https://routine.vn/media/amasty/webp/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/q/u/quan-jean-nam-10f20dpa102cr2-black-_2__1_1_jpg.webp"><img
-                                                                src="https://routine.vn/media/amasty/webp/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/q/u/quan-jean-nam-10f20dpa102cr2-black-_2__1_1_jpg.webp"
-                                                                class="fotorama__img--full"
-                                                                aria-hidden="false"><img
-                                                                src="https://routine.vn/media/amasty/webp/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/q/u/quan-jean-nam-10f20dpa102cr2-black-_2__1_1_jpg.webp"
-                                                                class="fotorama__img"
-                                                                aria-hidden="false"
-                                                                id="magnifier-item-0"></div><div
-                                                            class="fotorama__stage__frame fotorama_vertical_ratio fotorama__loaded fotorama__loaded--img fotorama__loaded--full"
-                                                            aria-hidden="true"
-                                                            style="left: 753px; transition-duration: 0ms;"
-                                                            href="https://routine.vn/media/amasty/webp/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/q/u/quan-jean-nam-10f20dpa102cr2-black-_4__1_1_jpg.webp"><img
-                                                                src="https://routine.vn/media/amasty/webp/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/q/u/quan-jean-nam-10f20dpa102cr2-black-_4__1_1_jpg.webp"
-                                                                class="fotorama__img--full"
-                                                                aria-hidden="false"><img
-                                                                src="https://routine.vn/media/amasty/webp/catalog/product/cache/5b5632a96492396f42c72e22fdd64763/q/u/quan-jean-nam-10f20dpa102cr2-black-_4__1_1_jpg.webp"
-                                                                class="fotorama__img"
-                                                                aria-hidden="false"></div></div>
-                                                    <div
-                                                        class="fotorama__arr fotorama__arr--next"
-                                                        tabindex="0"
-                                                        role="button"
-                                                        aria-label="Next"
-                                                        data-gallery-role="arrow"
-                                                        style="display: block; right: 82px;">
-                                                        <div
-                                                            class="fotorama__arr__arr"></div>
-                                                    </div>
-                                                    <div
-                                                        class="fotorama__video-close"></div>
-                                                    <div
-                                                        class="fotorama__zoom-in zoom-in-loaded fotorama__zoom-in--disabled"
-                                                        data-gallery-role="fotorama__zoom-in"
-                                                        aria-label="Zoom in"
-                                                        role="button"
-                                                        tabindex="0"></div>
-                                                    <div
-                                                        class="fotorama__zoom-out zoom-out-loaded fotorama__zoom-out--disabled"
-                                                        data-gallery-role="fotorama__zoom-out"
-                                                        aria-label="Zoom out"
-                                                        role="button"
-                                                        tabindex="0"></div>
-                                                    <div
-                                                        class="fotorama__spinner"></div>
-                                                </div><div
-                                                    class="fotorama__nav-wrap fotorama__nav-wrap--vertical"
-                                                    data-gallery-role="nav-wrap">
-                                                    <div
-                                                        class="fotorama__nav fotorama__nav--thumbs"
-                                                        style="height: 1127px; width: 72px;">
-
-                                                        <div
-                                                            class="fotorama__thumb__arr fotorama__thumb__arr--left fotorama__arr--disabled"
-                                                            role="button"
-                                                            aria-label="Previous"
-                                                            data-gallery-role="arrow"
-                                                            tabindex="-1"
-                                                            style="display: block;"
-                                                            disabled="disabled">
-                                                            <div
-                                                                class="fotorama__thumb--icon"></div>
-                                                        </div>
-                                                        <div
-                                                            class="fotorama__nav__shaft"
-                                                            style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
-                                                            <div
-                                                                class="fotorama__thumb-border"
-                                                                style="transition-duration: 0ms; transform: translate3d(0px, 472px, 0px); width: 72px; height: 108px;"></div>
-                                                            <div
-                                                                class="fotorama__nav__frame fotorama__nav__frame--thumb"
-                                                                tabindex="0"
-                                                                role="button"
-                                                                data-gallery-role="nav-frame"
-                                                                data-nav-type="thumb"
-                                                                style="width: 72px;"
-                                                                data-active="false">
-                                                                <div
-                                                                    class="fotorama__thumb fotorama_vertical_ratio fotorama__loaded fotorama__loaded--img"><img
-                                                                        src="https://routine.vn/media/catalog/product/cache/9eb3bb38848a3053921b46e4936c5b10/1/0/10f20dpa102cr1_13__1_1.jpg"
-                                                                        class="fotorama__img"
-                                                                        aria-hidden="false">
-                                                                </div>
-                                                            </div><div
-                                                                class="fotorama__nav__frame fotorama__nav__frame--thumb"
-                                                                tabindex="0"
-                                                                role="button"
-                                                                data-gallery-role="nav-frame"
-                                                                data-nav-type="thumb"
-                                                                style="width: 72px;"
-                                                                data-active="false">
-                                                                <div
-                                                                    class="fotorama__thumb fotorama_vertical_ratio fotorama__loaded fotorama__loaded--img"><img
-                                                                        src="https://routine.vn/media/catalog/product/cache/9eb3bb38848a3053921b46e4936c5b10/1/0/10f20dpa102cr1_11__1_1.jpg"
-                                                                        class="fotorama__img"
-                                                                        aria-hidden="false">
-                                                                </div>
-                                                            </div><div
-                                                                class="fotorama__nav__frame fotorama__nav__frame--thumb"
-                                                                tabindex="0"
-                                                                role="button"
-                                                                data-gallery-role="nav-frame"
-                                                                data-nav-type="thumb"
-                                                                style="width: 72px;"
-                                                                data-active="false">
-                                                                <div
-                                                                    class="fotorama__thumb fotorama_vertical_ratio fotorama__loaded fotorama__loaded--img"><img
-                                                                        src="https://routine.vn/media/catalog/product/cache/9eb3bb38848a3053921b46e4936c5b10/1/0/10f20dpa102cr1_12__1_1.jpg"
-                                                                        class="fotorama__img"
-                                                                        aria-hidden="false">
-                                                                </div>
-                                                            </div><div
-                                                                class="fotorama__nav__frame fotorama__nav__frame--thumb"
-                                                                tabindex="0"
-                                                                role="button"
-                                                                data-gallery-role="nav-frame"
-                                                                data-nav-type="thumb"
-                                                                style="width: 72px;"
-                                                                data-active="false">
-                                                                <div
-                                                                    class="fotorama__thumb fotorama_vertical_ratio fotorama__loaded fotorama__loaded--img"><img
-                                                                        src="https://routine.vn/media/catalog/product/cache/9eb3bb38848a3053921b46e4936c5b10/q/u/quan-jean-nam-10f20dpa102cr2-black-_2__1_1.jpg"
-                                                                        class="fotorama__img"
-                                                                        aria-hidden="false">
-                                                                </div>
-                                                            </div><div
-                                                                class="fotorama__nav__frame fotorama__nav__frame--thumb fotorama__active"
-                                                                tabindex="0"
-                                                                role="button"
-                                                                data-gallery-role="nav-frame"
-                                                                data-nav-type="thumb"
-                                                                style="width: 72px;"
-                                                                data-active="true">
-                                                                <div
-                                                                    class="fotorama__thumb fotorama_vertical_ratio fotorama__loaded fotorama__loaded--img"><img
-                                                                        src="https://routine.vn/media/catalog/product/cache/9eb3bb38848a3053921b46e4936c5b10/q/u/quan-jean-nam-10f20dpa102cr2-black-_3__1_1.jpg"
-                                                                        class="fotorama__img"
-                                                                        aria-hidden="false">
-                                                                </div>
-                                                            </div><div
-                                                                class="fotorama__nav__frame fotorama__nav__frame--thumb"
-                                                                tabindex="0"
-                                                                role="button"
-                                                                data-gallery-role="nav-frame"
-                                                                data-nav-type="thumb"
-                                                                style="width: 72px;">
-                                                                <div
-                                                                    class="fotorama__thumb fotorama_vertical_ratio fotorama__loaded fotorama__loaded--img"><img
-                                                                        src="https://routine.vn/media/catalog/product/cache/9eb3bb38848a3053921b46e4936c5b10/q/u/quan-jean-nam-10f20dpa102cr2-black-_4__1_1.jpg"
-                                                                        class="fotorama__img"
-                                                                        aria-hidden="false">
-                                                                </div>
-                                                            </div><div
-                                                                class="fotorama__nav__frame fotorama__nav__frame--thumb"
-                                                                tabindex="0"
-                                                                role="button"
-                                                                data-gallery-role="nav-frame"
-                                                                data-nav-type="thumb"
-                                                                style="width: 72px;">
-                                                                <div
-                                                                    class="fotorama__thumb fotorama_vertical_ratio fotorama__loaded fotorama__loaded--img"><img
-                                                                        src="https://routine.vn/media/catalog/product/cache/9eb3bb38848a3053921b46e4936c5b10/q/u/quan-jean-nam-10f20dpa102cr2-black-_5__1.jpg"
-                                                                        class="fotorama__img"
-                                                                        aria-hidden="false">
-                                                                </div>
-                                                            </div><div
-                                                                class="fotorama__nav__frame fotorama__nav__frame--thumb"
-                                                                tabindex="0"
-                                                                role="button"
-                                                                data-gallery-role="nav-frame"
-                                                                data-nav-type="thumb"
-                                                                style="width: 72px;">
-                                                                <div
-                                                                    class="fotorama__thumb fotorama_vertical_ratio fotorama__loaded fotorama__loaded--img"><img
-                                                                        src="https://routine.vn/media/catalog/product/cache/9eb3bb38848a3053921b46e4936c5b10/q/u/quan-jean-nam-10f20dpa102cr2-black-_6__1.jpg"
-                                                                        class="fotorama__img"
-                                                                        aria-hidden="false">
-                                                                </div>
-                                                            </div></div>
-                                                        <div
-                                                            class="fotorama__thumb__arr fotorama__thumb__arr--right fotorama__arr--disabled"
-                                                            role="button"
-                                                            aria-label="Next"
-                                                            data-gallery-role="arrow"
-                                                            tabindex="-1"
-                                                            style="display: block;"
-                                                            disabled="disabled">
-                                                            <div
-                                                                class="fotorama__thumb--icon"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div
-                                                data-gallery-role="fotorama__focusable-end"
-                                                tabindex="-1"></div>
-                                        </div><style>.fotorama1698977700495 .fotorama__nav--thumbs .fotorama__nav__frame{
-                            padding:10px;
-                            height:108px}
-                            .fotorama1698977700495 .fotorama__thumb-border{
-                            height:108px;
-                            border-width:2px;
-                            margin-top:10px}</style>
-                                        <div
-                                            class="magnifier-preview magnify-hidden"
-                                            data-gallery-role="magnifier"
-                                            id="preview"
-                                            style="width: 0px; height: 1127px; top: 139px; left: 915px; display: none;"></div>
-                                    </div><div
+                                        class="gallery-placeholder _block-content-loading"
+                                        data-gallery-role="gallery-placeholder"><img
+                                            alt="main product photo"
+                                            class="gallery-placeholder__image"
+                                            src="https://routine.vn/media/amasty/webp/catalog/product/cache/5de180fdba0e830d350bd2803a0413e8/1/0/10f20dpa101cr1_black-quan-jean-nam_2__3_1_jpg.webp" /></div><div
                                         class="fotorama-fullscreene-backdrop"></div>
                                     <div
                                         class="mgn-product-label product-label-container bot-left image-layout"
@@ -1654,8 +1544,9 @@
                                         id="gallery-next-area" tabindex="-1"></a>
                                     <div class="product-info-stock-media"> <div
                                             class="stock available"
-                                            title="Sẵn có"><span>Còn trong kho</span></div>
-                                    </div></div> </div>
+                                            title="S&#x1EB5;n&#x20;c&#xF3;"><span>Còn
+                                                trong kho</span></div> </div></div>
+                            </div>
                             <div class="product-info-main">
                                 <div class="page-title-wrapper product"><h1
                                         class="page-title"><span class="base"
@@ -1708,22 +1599,31 @@
                                                     class="hideshare-facebook"
                                                     href="#"><div
                                                         class="facebook-share"></div></a></li></ul></div>
-                                </div><div class="product-add-form-custom"
-                                    style="height: 349px;"><div
-                                        class="product-add-form-fixtop"><div
-                                            class="product-add-form-left"> <div
-                                                class="product-add-form-fixtop-images"><img
+                                </div>
+                                <div class="product-add-form-custom"
+                                    style="height: 349px;">
+                                    <div
+                                        class="product-add-form-fixtop">
+                                        <div
+                                            class="product-add-form-left">
+                                            <div
+                                                class="product-add-form-fixtop-images">
+                                                <img
                                                     alt="Quần Jean Nam Trơn Form Slim - 10F20DPA102CR2"
                                                     class="gallery-placeholder__image lazyOwl"
                                                     src="https://routine.vn/media/amasty/webp/catalog/product/cache/5de180fdba0e830d350bd2803a0413e8/1/0/10f20dpa102cr1_13__1_1_jpg.webp"></div><div
                                                 class="product-add-form-mind">
-                                                <div class="page-title-wrapper"><h1
-                                                        class="page-title"><span
+                                                <div class="page-title-wrapper">
+                                                    <h1 class="page-title">
+                                                        <span
                                                             class="base"
                                                             data-ui-id="page-title-wrapper">Quần
                                                             Jean Nam Trơn Form
                                                             Slim -
-                                                            10F20DPA102CR2</span></h1></div><div
+                                                            10F20DPA102CR2</span>
+                                                    </h1>
+                                                </div>
+                                                <div
                                                     class="price-box price-final_price"
                                                     data-role="priceBox"
                                                     data-product-id="42493"
@@ -1756,7 +1656,10 @@
                                                                     class="price">480.000&nbsp;₫</span></span>
                                                         </span></span> <span
                                                         class="product-sale-percent"><span>-2%</span></span>
-                                                </div></div></div> <div
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
                                             class="product-add-form"><form
                                                 data-product-sku="10F20DPA102CR2"
                                                 action="https://routine.vn/checkout/cart/add/uenc/aHR0cHM6Ly9yb3V0aW5lLnZuL3F1YW4tamVhbi1uYW0tdHJvbi1mb3JtLXNsaW0tMTBmMjBkcGExMDJjcjIuaHRtbA%2C%2C/product/42493/"
@@ -3576,6 +3479,21 @@
         });
 
     </script>
+
+        <script>
+    fotoramaDefaults = {
+      width: 700,
+      maxwidth: '100%',
+      ratio: 16/9,
+      allowfullscreen: true,
+      nav: 'thumbs',
+      fit: 'cover'
+    }
+  </script>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     </body>
 
 </html>
